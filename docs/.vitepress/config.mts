@@ -16,7 +16,7 @@ export default defineConfig({
 /** 导航栏 */
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: 'Golang', link: '/golang/inter', activeMatch: '/golang/' },
+    { text: 'Go', link: '/go/inter', activeMatch: '/go/' },
     { text: 'Nest', link: '/nest/inter', activeMatch: '/nest/' },
     { text: 'Vue', link: '/vue/inter', activeMatch: '/vue/' },
     { text: 'Template', link: '/template/inter', activeMatch: '/template/' },
@@ -41,7 +41,7 @@ function socialLinks(): DefaultTheme.SocialLink[] {
 /** 侧边栏菜单 */
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    '/golang/': { base: '/golang/', items: sidebarGolang() },
+    '/go/': { base: '/go/', items: sidebargo() },
     '/nest/': { base: '/nest/', items: sidebarNest() },
     '/vue/': { base: '/vue/', items: sidebarVue() },
     '/template/': { base: '/template/', items: sidebarTemplate() },
@@ -50,7 +50,7 @@ function sidebar(): DefaultTheme.Sidebar {
 }
 
 /** Go目录 */
-function sidebarGolang(): DefaultTheme.SidebarItem[] {
+function sidebargo(): DefaultTheme.SidebarItem[] {
   return [
 
   ]
